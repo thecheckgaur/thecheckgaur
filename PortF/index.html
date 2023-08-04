@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +26,7 @@
                 </div>
                 <ul>
 
-                    <li><a onclick="document.getElementById('pg7').scrollIntoView()">Contact</a></li>
+                    <li><a onclick="document.getElementById('frm').scrollIntoView()">Get in Touch</a></li>
                 </ul>
             </div>
         </nav>
@@ -48,7 +52,7 @@
                 effects on Button and Navigation Bar.</p>
         </div>
 
-        <a href="/flowerpedia/home.html" id="flowerpedia">
+        <a target="_blank" href="/flowerpedia/home.html" id="flowerpedia">
             <img src="/images/flowerpedia.png" alt="FLOWER PEDIA">
         </a>
 
@@ -60,7 +64,8 @@
 
 
 
-        <a href="/spiderman/Home.html" id="spiderman"> <img src="/images/spiderman.png" alt="SPIDER MAN">
+        <a target="_blank" href="/spiderman/Home.html" id="spiderman"> <img src="/images/spiderman.png"
+                alt="SPIDER MAN">
         </a>
 
         <div class="contant">
@@ -78,7 +83,7 @@
             <p>This is a complete Home Page of Netflix with all small details are covered in this website.</p>
         </div>
 
-        <a href="/netflix/home.html" id="netflix"><img src="/images/netflix.png" alt="NETFLIX"></a>
+        <a target="_blank" href="/netflix/home.html" id="netflix"><img src="/images/netflix.png" alt="NETFLIX"></a>
 
     </div>
 
@@ -86,7 +91,8 @@
 
     <div class="pg5">
 
-        <a href="/Calculator with JS/Calculator.html" id="calculator"><img src="/images/calculator.png" alt="calculator"></a>
+        <a target="_blank" href="/Calculator with JS/Calculator.html" id="calculator"><img src="/images/calculator.png"
+                alt="calculator"></a>
         <div class="contant">
             <h1>Calculator with Java Script</h1>
             <p>It is a basic Calculator made with HTML CSS & JS and can solve simple equations like +, -, / & *.</p>
@@ -102,28 +108,48 @@
 
 
     <div class="pg7" id="pg7">
-        <h1>CONTACT</h1>
+
+
         <footer>
-            <p>Questions? Call <a style="color: #b5b5b5;" href="#">+(91)-97181-06022</a></p>
+            <div class="uprfooter">
 
-
-
-
+                <h1>Get in Touch</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/thechetangaur/?hl=en"><i
+                                class="fa-brands fa-instagram fa-lg"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <div class="footercontainer">
+                <form id="frm" name="myForm" onsubmit="return validateForm()">
+                    <label for="name">Your name</label>
+                    <label for="email">Email</label>
+                    <label for="number">Your Phone </label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="number" name="number" id="number" placeholder="Phone" required>
+                    <p id="nameerror" class="error"></p>
+                    <p id="nameerror" class="error"></p>
+                    <p id="nameerror" class="error"></p>
+                    <label for="textarea" class="message">Your Message</label>
+                    <textarea type="textarea" rows="5" name="Message" class="textarea" id="textarea"
+                        placeholder="Message" required></textarea>
+                    <input type="submit" onclick="validateForm()" value="Submit" class="button" id="button">
+                </form>
+            </div>
             <p> Portfolio By Chetan Gaur</p>
 
-            <button class="btn" onclick="document.getElementById('pg1').scrollIntoView()">Top</button>
-
-
-
+            <button class="btn" onclick="document.getElementById('pg1').scrollIntoView()"><i class="fa fa-arrow-up"
+                    aria-hidden="true"></i></button>
         </footer>
-
-
-
     </div>
 
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

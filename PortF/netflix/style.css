@@ -2,7 +2,10 @@
     margin: 0;
 
 }
-
+html {
+    scroll-behavior: smooth;
+    transition: all .5s;
+}
 .pg1 {
     width: auto;
     height: 100vh;
