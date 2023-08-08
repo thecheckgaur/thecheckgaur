@@ -1,0 +1,23 @@
+body{
+    background-color: wheat;
+    font-family: monospace;
+    text-align: center;
+}
+.clock{
+    width: 40%;
+    height: 20%;
+    background-color: saddlebrown;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 16% auto;
+    cursor: pointer;
+    color: blanchedalmond;
+    transition: .5s;
+}
+.clock:hover{
+    background-color: sienna;
+    color: black;
+    
+    width: 45vw;
+    border-radius: 50px;
+}
