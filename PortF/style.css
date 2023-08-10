@@ -43,13 +43,14 @@ html {
     margin: 0;
     width: auto;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
 .navbar {
+    height: 100px;
     width: 90%;
     margin: auto;
     padding: 18px 0;
@@ -80,30 +81,15 @@ html {
 }
 
 
-
-
-#logo {
+#logo1{
     cursor: pointer;
-    line-height: .8;
     transition: .5s;
-    
-    font-family: 'Aclonica', 'Julius Sans One', 'Chiller';
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 55px;
-    width: 250px;
-    height: 100px;
-   
-
 }
 
-#logo:hover {
-    
-    font-family: 'Snap ITC';
-    font-size: 60px;
-    color: skyblue;
 
 
+#logo1:hover{
+    transform: scale(1.2);
 }
 
 .h1 {
@@ -161,7 +147,7 @@ h3 {
 
 .pg2 {
     /* border-top: 10px solid rgb(41, 41, 41); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/flowerpediabg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/flowerpediabg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-top: 10px solid skyblue;
@@ -237,7 +223,7 @@ a img:hover {
 
 
 .pg3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/spidermanbg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/spidermanbg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,7 +247,7 @@ a img:hover {
 
 .pg4 {
     /* background-color: rgb(0, 0, 0); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/netflixbg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/netflixbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -284,7 +270,7 @@ a img:hover {
 
 .pg5 {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/calculatorbg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/calculatorbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -334,31 +320,36 @@ a img:hover {
     display: inline-block;
     font-size: 30px;
 }
+
 .uprfooter ul li a i {
     margin-right: 20px;
     transition: .2s;
     color: skyblue;
 }
 
-.uprfooter ul li a i:hover {    
+.uprfooter ul li a i:hover {
     margin-right: 10px;
     font-size: 50px;
 }
 
-.fa-facebook:hover{
+.fa-facebook:hover {
     color: #0091ff;
 }
-.fa-instagram:hover{
-   
-    color:white;
+
+.fa-instagram:hover {
+
+    color: white;
 }
-.fa-linkedin:hover{
+
+.fa-linkedin:hover {
     color: blue;
 }
-.fa-whatsapp:hover{
+
+.fa-whatsapp:hover {
     color: #00ff91;
 }
-.fa-pinterest:hover{
+
+.fa-pinterest:hover {
     color: red;
 }
 
@@ -401,8 +392,8 @@ footer {
 .footercontainer {
     background-color: rgb(32, 32, 32);
     height: fit-content;
-    
-    padding: 2% ;
+
+    padding: 2%;
     margin: 2% auto;
 }
 
@@ -412,7 +403,7 @@ footer {
     margin: 20px;
     font-size: 20px;
 
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: auto auto auto;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -469,70 +460,186 @@ input[type=number] {
     }
 }
 
+.animate.left {
+    animation-name: leftslide;
+    animation-duration: 2s;
+
+}
+.animate.right {
+    animation-name: rightslide;
+    animation-duration: 2s;
+
+}
+.animate.top {
+    animation-name: topslide;
+    animation-duration: 2s;
+
+}
+
+@keyframes leftslide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 100%;
+        
+        transform: translateX(0);
+
+
+    }
+}
+@keyframes rightslide {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 100%;
+        
+        transform: translateX(0);
+
+
+    }
+}
+@keyframes topslide {
+    from {
+        opacity: 0;
+        transform: translatey(50px);
+    }
+
+    to {
+        opacity: 100%;
+        
+        transform: translatey(0);
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width:0) and (max-width:800px) {
-    .navbar{
+    .navbar {
         display: block;
         text-align: center;
     }
-    #logo{
+
+    #logo {
         text-align: center;
         width: 100%;
     }
-    .pg2{
+
+    .pg2 {
         display: block;
         text-align: center;
         padding: 10% 10%;
     }
-    a img{
+
+    a img {
         width: 100%;
         margin: 10% 0;
 
     }
-    .contant{
+
+    .contant {
         width: 100%;
         margin: 10px 0;
     }
+
     .contant p {
         margin-top: 10%;
     }
-    .pg3{
+
+    .pg3 {
         display: block;
         text-align: center;
         padding: 10% 10%;
     }
-    .pg4{
+
+    .pg4 {
         display: block;
         text-align: center;
         padding: 10% 10%;
     }
-    .pg5{
+
+    .pg5 {
         display: block;
         text-align: center;
         padding: 10% 10%;
     }
-    .pg2{
+
+    .pg2 {
         display: block;
         text-align: center;
         padding: 10% 10%;
     }
+
     .uprfooter {
         display: block;
         text-align: center;
     }
+
     .uprfooter ul li {
         margin: 10% 0;
     }
+
     .footercontainer form {
-       display: block;
-       text-align: center;
-       margin: 10% auto;
+        display: block;
+        text-align: center;
+        margin: 10% auto;
 
     }
-    .footercontainer form label{
+
+    .footercontainer form label {
         display: none;
 
     }
-    .footercontainer form input{
+
+    .footercontainer form input {
         margin: 3% auto;
         width: 80%;
         display: block;
